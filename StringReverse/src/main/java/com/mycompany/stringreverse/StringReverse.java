@@ -19,9 +19,15 @@ public class StringReverse {
         
         Stack thestack=new Stack();
         
-        for (int i=0;i<thestring.length();i++){
+        for(int i=0;i<thestring.length();i++){
             thestack.push(thestring.charAt(i));
         }
         
+        for(int i=0;i<thestring.length();i++){
+            reversed[i]=(char)thestack.pop();
+         }
+        thestring=String.valueOf(reversed);
+        
+        System.out.println("Reversed:\t"+thestring);
     }
 }
