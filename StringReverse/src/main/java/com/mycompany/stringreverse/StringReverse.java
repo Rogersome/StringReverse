@@ -14,6 +14,14 @@ public class StringReverse {
 
     public static void main(String[] args) {
         String thestring="This is Jeff's first git Project";
-        System.out.println(thestring);
+        System.out.println("Original:\t"+thestring);
+        char[] reversed=new char[thestring.length()];
+        
+        Stack thestack=new Stack();
+        
+        for (int i=0;i<thestring.length();i++){
+            thestack.push(thestring.charAt(i));
+        }
+        
     }
 }
