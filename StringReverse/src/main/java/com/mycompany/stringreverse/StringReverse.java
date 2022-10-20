@@ -9,9 +9,11 @@ package com.mycompany.stringreverse;
  *
  * @author jeffe
  */
+import java.util.Stack;
 public class StringReverse {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        String thestring="This is Jeff's first git Project";
+        System.out.println(thestring);
     }
 }
